@@ -12,7 +12,7 @@ ELEVENLABS_VOICE_ID=JBFqnCBsd6RMkjVDRZzb
 MODEL_ID=scribe_v1
 ```
 
-On Rapsberry Pi you might need to install the portaudio dev files:
+On Raspberry Pi you might need to install the portaudio dev files:
 
 ```$ sudo apt install portaudio19-dev```
 
