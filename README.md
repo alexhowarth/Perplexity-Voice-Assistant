@@ -8,6 +8,6 @@ PERPLEXITY_API_KEY=<key>
 
 # Eleven Labs settings
 ELEVENLABS_API_KEY=<key>
-ELEVENLABS_VOICE_ID=<key>
+ELEVENLABS_VOICE_ID=JBFqnCBsd6RMkjVDRZzb
 MODEL_ID=scribe_v1
 ```
