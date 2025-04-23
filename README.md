@@ -14,4 +14,14 @@ MODEL_ID=scribe_v1
 
 On Rapsberry Pi you might need to install the portaudio dev files:
 
-```sudo apt install portaudio19-dev```
+```$ sudo apt install portaudio19-dev```
+
+To get up and running:
+
+```
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+
+$ python perplexity-voice-assistant/perplexity-voice-assistant.py
+```
