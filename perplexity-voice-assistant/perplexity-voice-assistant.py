@@ -85,6 +85,8 @@ def main():
         validate_environment_variables()
         elevenlabs_client = initialize_elevenlabs_client()
 
+        synthesize_text_to_speech(elevenlabs_client,"How can I help you?")
+
         audio_data = capture_audio()
         if not audio_data:
             return
