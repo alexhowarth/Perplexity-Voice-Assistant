@@ -44,14 +44,18 @@ def transcribe_audio_to_text(client, audio_bytes):
         model_id="scribe_v1",
     ).text
 
+def get_system_prompt():
+    """Retrieve the system prompt from the environment or use a default value."""
+    return os.getenv("PERPLEXITY_SYSTEM_PROMPT", "Respond with only one fascinating fact, with no citations or markdown characters, kept under 50 words.")
 
 def query_perplexity_api(prompt):
     """Send a text query to the Perplexity API and return the response."""
+
     messages = [
         {
             "role": "system",
             "content": (
-                "Respond with only one fascinating fact, with no citations or markdown characters, kept under 50 words."
+                get_system_prompt()
             ),
         },
         {"role": "user", "content": prompt},
