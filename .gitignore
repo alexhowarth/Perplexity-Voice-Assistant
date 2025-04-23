@@ -1,0 +1,14 @@
+# Exclude virtual environment
+venv/
+
+# Exclude Python cache files
+__pycache__/
+*.pyc
+
+# Exclude environment files
+.env
+
+# Exclude installed dependencies
+*.egg-info/
+dist/
+build/
